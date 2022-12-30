@@ -1,24 +1,3 @@
-from tkinter import *
-from tkinter import messagebox
-import mysql.connector
-import os
-import time
-import socket
-
-class DB_Access:
-    status = False
-    def __init__(self):
-        # connecting to the database
-        self.db = mysql.connector.connect(host='127.0.0.1', user="root", password="Shreya@9966", database="network")
-        self.mycur = self.db.cursor()
-
-    # destroy() in the code base is used to destroy the window
-    def error_destroy(self):
-        err.destroy()
-
-    def succ_destroy(self):
-        succ.destroy()
-        root1.destroy()
 
     # error message pop-up box design
     def error(self):
